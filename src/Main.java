@@ -25,16 +25,30 @@ public class Main {
 
         System.out.print("Elija una opción: ");
         int op = sc.nextInt();
+        sc.nextLine();
 
         do{
             switch(op){
                 case 1:
                     break;
                 case 2:
+                    System.out.println("==============================");
+                    System.out.println("         ~PAR E IMPAR~        ");
+                    System.out.println("==============================");
+                    System.out.println(".::Ingrese un Numero::.");
+                    int Numero = sc.nextInt();
+                    ParImpar(Numero);
                     break;
                 case 3:
                     break;
                 case 4:
+                    System.out.println("==============================");
+                    System.out.println("  .::CANTIDAD DE VOCALES::.  ");
+                    System.out.println("==============================");
+
+                    System.out.println("Ingrese una palabra: ");
+                    String palabra = sc.nextLine();
+                    System.out.println("La cantidad de Vocales en la palabra, es: " + ContarVocales(palabra));
                     break;
                 case 5:
                     break;
@@ -52,9 +66,27 @@ public class Main {
                     break;
             }
         }while(op == 11);
+    }
 
+    public static void ParImpar(int numero) {
+        if(numero % 2 == 0){
+            System.out.println("El numero es Par");
+        }
+        else{
+            System.out.println("El numero es Impar");
+        }
+    }
 
+    public static int ContarVocales(String palabra) {
+        int contador = 0;
+        palabra = palabra.toLowerCase();
+        for(int i = 0; i < palabra.length(); i++){
+            char letra = palabra.charAt(i);
+            if(letra == 'a' || letra =='e' || letra == 'i' || letra == 'o' || letra == 'u'){
+                contador++;
+            }
+        }
 
-
+        return contador;
     }
 }
