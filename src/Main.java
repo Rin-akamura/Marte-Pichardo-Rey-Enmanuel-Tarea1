@@ -26,10 +26,12 @@ public class Main {
         System.out.print("Elija una opción: ");
         int op = sc.nextInt();
         sc.nextLine();
+        
 
         do{
             switch(op){
                 case 1:
+                    
                     break;
                 case 2:
                     System.out.println("==============================");
@@ -38,8 +40,20 @@ public class Main {
                     System.out.println(".::Ingrese un Numero::.");
                     int Numero = sc.nextInt();
                     ParImpar(Numero);
+                    sc.nextLine();
                     break;
                 case 3:
+                    System.out.println("==============================");
+                    System.out.println("  .::TABLA DE MULTIPLICAR::.  ");
+                    System.out.println("==============================");
+
+                    System.out.println("Ingrese un numero del 1 al 12");
+                    int numero = sc.nextInt();
+                    
+                    tablaMultiplicar(numero);
+                    
+                    System.out.println();
+                    sc.nextLine();
                     break;
                 case 4:
                     System.out.println("==============================");
@@ -65,7 +79,7 @@ public class Main {
                 case 11:
                     break;
             }
-        }while(op == 11);
+        }while(op != 11);
     }
 
     public static void ParImpar(int numero) {
@@ -88,5 +102,17 @@ public class Main {
         }
 
         return contador;
+    }
+
+    public static void tablaMultiplicar(int numero) {
+        int producto = 0;
+
+        for(int i = 0; i < 12; i++){
+            System.out.println("===============================");
+            System.out.println("  .::TABLA DEL NUMERO " + numero + "::." );
+            producto = numero * i;
+            System.out.println(numero + " * " + i + "= " + producto);
+        }
+        return;
     }
 }
