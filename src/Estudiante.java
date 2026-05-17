@@ -3,7 +3,7 @@ public class Estudiante {
     private String Apellido;
     private String Matricula;
     private String Carrera;
-    private int Semestre;
+    private String Semestre;
     private String Universidad;
 
     public Estudiante() {
@@ -11,11 +11,11 @@ public class Estudiante {
         this.Apellido = "";
         this.Matricula = "";
         this.Carrera = "";
-        this.Semestre = 0;
+        this.Semestre = "";
         this.Universidad = "";
     }
 
-    public Estudiante(String nombre, String apellido, String matricula, String carrera, int semestre, String universidad ){
+    public Estudiante(String nombre, String apellido, String matricula, String carrera, String semestre, String universidad ){
         this.Nombre = nombre;
         this.Apellido = apellido; 
         this.Matricula = matricula;
@@ -40,7 +40,7 @@ public class Estudiante {
         return Carrera;
     }
 
-    public int getSemestre() {
+    public String getSemestre() {
         return Semestre;
     }
 
@@ -64,7 +64,7 @@ public class Estudiante {
         this.Carrera = carrera;
     }
 
-    public void setSemestre(int semestre) {
+    public void setSemestre(String semestre) {
         this.Semestre = semestre;
     }
 
@@ -78,5 +78,6 @@ public class Estudiante {
         System.out.println("====================");
         System.out.println("Nombre: " + getNombre() + "\nApellido: " + getApellido() +"\nMatricula: " + getMatricula() +
                          "\nCarrera: " + getCarrera() + "\nSemestre: " + getSemestre() + "\nUniversidad: " + getUniversidad());
+        return;
     }
 }
