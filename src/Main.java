@@ -2,10 +2,9 @@ import java.util.Scanner;
 
 public class Main {
     
-    
+     static Scanner sc = new Scanner(System.in);
     public static void main(String[] args) {
         MenuEstudiantes Archivos = new MenuEstudiantes();
-        Scanner sc = new Scanner(System.in);
         System.out.println("===========================================");
         System.out.println("          .:::MENU DE OPCIONES:::.         ");
         System.out.println("===========================================");
@@ -69,6 +68,10 @@ public class Main {
                     System.out.println("La cantidad de Vocales en la palabra, es: " + ContarVocales(palabra));
                     break;
                 case 5:
+                    System.out.println("=================================");
+                    System.out.println("     .::PROMEDIO DE NOTAS::.     ");
+                    System.out.println("=================================");
+                    CalcularPromedio();
                     break;
                 case 6:
                     Archivos.menu();
@@ -111,13 +114,39 @@ public class Main {
 
     public static void tablaMultiplicar(int numero) {
         int producto = 0;
-
-        for(int i = 0; i < 12; i++){
-            System.out.println("===============================");
-            System.out.println("  .::TABLA DEL NUMERO " + numero + "::." );
+        System.out.println("===============================");
+        System.out.println("  .::TABLA DEL NUMERO " + numero + "::." );
+        for(int i = 0; i <= 12; i++){
             producto = numero * i;
             System.out.println(numero + " * " + i + "= " + producto);
         }
+        System.out.println("===============================");
         return;
+    }
+
+    public static void CalcularPromedio() {
+        double suma = 0;
+        int cantidad = 0;
+        int desicion = 1;
+        while(desicion != 0){
+            System.out.println("Ingrese la nota #" + (cantidad + 1) + ": ");
+            double nota = sc.nextDouble();
+            sc.nextLine();
+            suma += nota;
+            cantidad++;
+            
+            System.out.println("Desea agregar otra Nota?" + "\n1/Seguir " + "\t0/Terminar");
+        
+            desicion = sc.nextInt();
+            sc.nextLine();
+
+            
+        }
+
+        double promedio = suma / cantidad;
+
+        System.out.println("================================");
+        System.out.println(" .::El promedio obtenido es de: " + promedio);
+        System.out.println("================================");
     }
 }
