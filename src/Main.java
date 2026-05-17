@@ -1,7 +1,10 @@
 import java.util.Scanner;
+
 public class Main {
     
+    
     public static void main(String[] args) {
+        MenuEstudiantes Archivos = new MenuEstudiantes();
         Scanner sc = new Scanner(System.in);
         System.out.println("===========================================");
         System.out.println("          .:::MENU DE OPCIONES:::.         ");
@@ -39,8 +42,9 @@ public class Main {
                     System.out.println("==============================");
                     System.out.println(".::Ingrese un Numero::.");
                     int Numero = sc.nextInt();
-                    ParImpar(Numero);
                     sc.nextLine();
+                    ParImpar(Numero);
+                    
                     break;
                 case 3:
                     System.out.println("==============================");
@@ -49,11 +53,11 @@ public class Main {
 
                     System.out.println("Ingrese un numero del 1 al 12");
                     int numero = sc.nextInt();
-                    
+                    sc.nextLine();
                     tablaMultiplicar(numero);
                     
                     System.out.println();
-                    sc.nextLine();
+                    
                     break;
                 case 4:
                     System.out.println("==============================");
@@ -67,6 +71,7 @@ public class Main {
                 case 5:
                     break;
                 case 6:
+                    Archivos.menu();
                     break;
                 case 7:
                     break;
