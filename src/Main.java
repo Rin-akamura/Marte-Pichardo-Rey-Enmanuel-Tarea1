@@ -4,8 +4,11 @@ public class Main {
     
      static Scanner sc = new Scanner(System.in);
     public static void main(String[] args) {
+        CuentaBancaria Cuenta = new CuentaBancaria();
         MenuEstudiantes Archivos = new MenuEstudiantes();
-        System.out.println("===========================================");
+        int op = 0;
+        do{
+            System.out.println("===========================================");
         System.out.println("          .:::MENU DE OPCIONES:::.         ");
         System.out.println("===========================================");
         System.out.println();
@@ -26,11 +29,9 @@ public class Main {
         System.out.println();
 
         System.out.print("Elija una opción: ");
-        int op = sc.nextInt();
+        op = sc.nextInt();
         sc.nextLine();
-        
 
-        do{
             switch(op){
                 case 1:
                     
@@ -43,6 +44,8 @@ public class Main {
                     int Numero = sc.nextInt();
                     sc.nextLine();
                     ParImpar(Numero);
+
+                    System.out.println();
                     
                     break;
                 case 3:
@@ -66,17 +69,21 @@ public class Main {
                     System.out.println("Ingrese una palabra: ");
                     String palabra = sc.nextLine();
                     System.out.println("La cantidad de Vocales en la palabra, es: " + ContarVocales(palabra));
+                    
+                    System.out.println();
                     break;
                 case 5:
                     System.out.println("=================================");
                     System.out.println("     .::PROMEDIO DE NOTAS::.     ");
                     System.out.println("=================================");
                     CalcularPromedio();
+                    System.out.println();
                     break;
                 case 6:
                     Archivos.menu();
                     break;
                 case 7:
+                    CuentaBancaria.cuenta();
                     break;
                 case 8:
                     break;
