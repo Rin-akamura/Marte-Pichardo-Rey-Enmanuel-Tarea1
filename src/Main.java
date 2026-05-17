@@ -88,6 +88,11 @@ public class Main {
                 case 8:
                     break;
                 case 9:
+                    System.out.println("=================================");
+                    System.out.println("        .::MATRIZ 3X3::.         ");
+                    System.out.println("=================================");
+                    Matriz3x3();        
+                    System.out.println();            
                     break;
                 case 10:
                     break;
@@ -146,8 +151,6 @@ public class Main {
         
             desicion = sc.nextInt();
             sc.nextLine();
-
-            
         }
 
         double promedio = suma / cantidad;
@@ -155,5 +158,28 @@ public class Main {
         System.out.println("================================");
         System.out.println(" .::El promedio obtenido es de: " + promedio);
         System.out.println("================================");
+    }
+
+    public static void Matriz3x3(){
+        int[][] matriz = new int [3][3];
+        System.out.println("Ingrese un numero para llenar la posicion");
+        for(int i = 0; i < 3; i++){
+            for(int j = 0; j < 3; j++){
+                System.out.print("Posicion [" + i + "] [" + j + "] = ");
+                matriz[i][j] = sc.nextInt();
+            }
+        }
+
+       ;
+        System.out.println("--------MATRIZ GENERADA--------");
+        
+
+
+        for(int i = 0; i < 3; i++){
+            for(int j = 0; j < 3; j++){
+                System.out.printf("%4d", matriz[i][j]);
+            }
+            System.out.println();
+        }
     }
 }
