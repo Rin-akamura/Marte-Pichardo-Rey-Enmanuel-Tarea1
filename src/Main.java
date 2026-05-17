@@ -4,6 +4,7 @@ public class Main {
     
      static Scanner sc = new Scanner(System.in);
     public static void main(String[] args) {
+        MenuInventario inventario = new MenuInventario();
         CuentaBancaria Cuenta = new CuentaBancaria();
         MenuEstudiantes Archivos = new MenuEstudiantes();
         int op = 0;
@@ -95,6 +96,7 @@ public class Main {
                     System.out.println();            
                     break;
                 case 10:
+                    inventario.Inventario();
                     break;
                 case 11:
                     break;
