@@ -17,6 +17,8 @@ public class Calculadora {
             System.out.println("              4. DIVIDIR             ");
             System.out.println("              5. SALIR               ");
             System.out.println("-------------------------------------");
+
+            System.out.print("Elija la opcion deseada: ");
             op = digitar.nextInt();
             digitar.nextLine();
 
@@ -84,7 +86,7 @@ public class Calculadora {
         resta = Num1 - num2;
 
         System.out.println("-----------------------");
-        System.out.println(Num1 + " + " + num2 + " = " + resta);
+        System.out.println(Num1 + " - " + num2 + " = " + resta);
         System.out.println("-----------------------");
     }
 
@@ -100,7 +102,7 @@ public class Calculadora {
         Multiplicacion = Num1 * num2;
 
         System.out.println("-----------------------");
-        System.out.println(Num1 + " + " + num2 + " = " + Multiplicacion);
+        System.out.println(Num1 + " * " + num2 + " = " + Multiplicacion);
         System.out.println("-----------------------");
     }
 
@@ -116,7 +118,7 @@ public class Calculadora {
         Division = Num1 / num2;
 
         System.out.println("-----------------------");
-        System.out.println(Num1 + " + " + num2 + " = " + Division);
+        System.out.println(Num1 + " / " + num2 + " = " + Division);
         System.out.println("-----------------------");
     }
     
