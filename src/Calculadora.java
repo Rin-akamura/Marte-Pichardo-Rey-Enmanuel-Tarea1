@@ -68,7 +68,7 @@ public class Calculadora {
         suma = Num1 + num2;
 
         System.out.println("-----------------------");
-        System.out.println(Num1 + num2 + "= " + suma);
+        System.out.println(Num1 + " + " + num2 + " = " + suma);
         System.out.println("-----------------------");
     }
 
@@ -84,7 +84,7 @@ public class Calculadora {
         resta = Num1 - num2;
 
         System.out.println("-----------------------");
-        System.out.println(Num1 + num2 + "= " + resta);
+        System.out.println(Num1 + " + " + num2 + " = " + resta);
         System.out.println("-----------------------");
     }
 
@@ -100,7 +100,7 @@ public class Calculadora {
         Multiplicacion = Num1 * num2;
 
         System.out.println("-----------------------");
-        System.out.println(Num1 + num2 + "= " + Multiplicacion);
+        System.out.println(Num1 + " + " + num2 + " = " + Multiplicacion);
         System.out.println("-----------------------");
     }
 
@@ -116,7 +116,7 @@ public class Calculadora {
         Division = Num1 / num2;
 
         System.out.println("-----------------------");
-        System.out.println(Num1 + num2 + "= " + Division);
+        System.out.println(Num1 + " + " + num2 + " = " + Division);
         System.out.println("-----------------------");
     }
     
