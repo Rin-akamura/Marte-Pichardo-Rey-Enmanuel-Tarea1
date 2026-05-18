@@ -3,6 +3,7 @@ import java.util.Scanner;
 public class Main {
     static Scanner sc = new Scanner(System.in);
     public static void main(String[] args) {
+        Menus catalogo = new Menus();
         Calculadora calculadora = new Calculadora();
         MenuInventario inventario = new MenuInventario();
         MenuEstudiantes Archivos = new MenuEstudiantes();
@@ -86,6 +87,7 @@ public class Main {
                     CuentaBancaria.cuenta();
                     break;
                 case 8:
+                    catalogo.CatalogoVehiculos();
                     break;
                 case 9:
                     System.out.println("=================================");
