@@ -12,7 +12,7 @@ public class Vehiculo {
     }
     
 
-    public Vehiculo(String Modelo, String AFabricacion, String Color, String Kilometraje, String Placa, String Combustible, String Consumo) {
+    public Vehiculo(String marca, String Modelo, String AFabricacion, String Color, String Kilometraje, String Placa, String Combustible, String Consumo) {
         this.Modelo = Modelo;
         this.AFabricacion = AFabricacion;
         this.Color = Color;
@@ -20,6 +20,7 @@ public class Vehiculo {
         this.Placa = Placa;
         this.Combustible = Combustible;
         this.Consumo = Consumo;
+        this.Marca = marca;
     }
 
     
