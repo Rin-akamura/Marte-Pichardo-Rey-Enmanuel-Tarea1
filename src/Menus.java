@@ -24,6 +24,7 @@ public class Menus {
 
             switch(op) {
                 case 1:
+                    MenuMoto();
                     break;
                 case 2:
                     MenuCarro();
@@ -39,6 +40,7 @@ public class Menus {
     }
 
     public void MenuCarro(){
+        Consecionario marca = new Consecionario();
         int op = 0;
         do{
             System.out.println("==========================================");
@@ -58,10 +60,13 @@ public class Menus {
 
             switch(op) {
                 case 1:
+                    marca.Toyota();
                     break;
                 case 2:
+                    marca.Honda();
                     break;
                 case 3:
+                    marca.Nissan();
                     break;
                 case 4:
                     break;
@@ -74,6 +79,7 @@ public class Menus {
     }
 
     public void MenuMoto() {
+        Consecionario marca = new Consecionario();
         int op = 0;
         do{
             System.out.println("==========================================");
@@ -93,10 +99,13 @@ public class Menus {
 
             switch(op) {
                 case 1:
+                    marca.Yamaha();
                     break;
                 case 2:
+                    marca.Kawasaki();
                     break;
                 case 3:
+                    marca.Suzuki();
                     break;
                 case 4:
                     break;
