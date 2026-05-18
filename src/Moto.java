@@ -70,4 +70,20 @@ public class Moto extends Vehiculo {
     public String getTipoEscape(){
         return TipoEscape;
     }
+
+    public void MostrarMoto() {
+        System.out.println("=====================================");
+        System.out.println("       .::" + getModelo() + "::.         ");
+        System.out.println("=====================================");
+        
+        System.out.println("-------------------------------------");
+        super.MostrarVehiculo();
+        System.out.println("Tipo: " + getTipo());
+        System.out.println("Cilindraje: " + getCilindraje());
+        System.out.println("Tipo de Manubrio: " + getTipoManubrio());
+        System.out.println("Tipo de Freno: " + getTipoFreno());
+        System.out.println("Transmision: " + getTransmision());
+        System.out.println("Tipo de Escape: " + getTipoEscape());
+        System.out.println("--------------------------------------");
+    }
 }
