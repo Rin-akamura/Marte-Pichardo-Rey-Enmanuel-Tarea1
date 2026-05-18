@@ -88,4 +88,15 @@ public class Vehiculo {
     public void setConsumo(String Consumo) {
         this.Consumo = Consumo;
     }
+
+    public void MostrarVehiculo(){
+        System.out.println("Marca: " + getMarca());
+        System.out.println("Modelo: " + getModelo());
+        System.out.println("Año de FabricacionÑ " + getAFabricacion());
+        System.out.println("Color: " + getColor());
+        System.out.println("Kilometraje: " + getKilometraje());
+        System.out.println("Placa: " + getPlaca());
+        System.out.println("Tipo de combustible" + getCombustible());
+        System.out.println("Consumo: " + getConsumo());
+    }
 }
