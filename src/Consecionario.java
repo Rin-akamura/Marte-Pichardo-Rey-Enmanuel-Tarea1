@@ -18,6 +18,8 @@ public class Consecionario {
         toyota.setCilindraje("3000 cc");
         toyota.setSuspension("Deportiva");
         toyota.setTraccion("Trasera");
+
+        toyota.MostrarCarro();
     }
 
     public void Honda(){
@@ -36,6 +38,8 @@ public class Consecionario {
         honda.setCilindraje("2000 cc");
         honda.setSuspension("Estandar");
         honda.setTraccion("Delantera");
+
+        honda.MostrarCarro();
     }
 
     public void Nissan() {
@@ -54,6 +58,8 @@ public class Consecionario {
         nissan.setCilindraje("3800 cc");
         nissan.setSuspension("Deportiva");
         nissan.setTraccion("AWD (traccion total)");
+
+        nissan.MostrarCarro();
     }
 
     public void Yamaha() {
@@ -73,6 +79,8 @@ public class Consecionario {
         yamaha.setTipoFreno("Frenos de disco ABS");
         yamaha.setTransmision("Manual de 6 velocidades");
         yamaha.setTipoEscape("Escape deportivo Yoshimura");
+
+        yamaha.MostrarMoto();
     }
 
     public void Kawasaki() {
@@ -92,6 +100,8 @@ public class Consecionario {
         kawasaki.setTipoFreno("Frenos de disco ABS");
         kawasaki.setTransmision("Manual de 6 velocidades");
         kawasaki.setTipoEscape("Escape deportivo Akrapovic");
+
+        kawasaki.MostrarMoto();
     }
 
     public void Suzuki(){
@@ -111,6 +121,8 @@ public class Consecionario {
         suzuki.setTipoFreno("Frenos de disco Brembo ABS");
         suzuki.setTransmision("Manual de 6 velocidades");
         suzuki.setTipoEscape("Escape deportivo Yoshimura"); 
+
+        suzuki.MostrarMoto();
     }
 
 }
