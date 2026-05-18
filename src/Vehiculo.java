@@ -91,7 +91,6 @@ public class Vehiculo {
 
     public void MostrarVehiculo(){
         System.out.println("Marca: " + getMarca());
-        System.out.println("Modelo: " + getModelo());
         System.out.println("Año de FabricacionÑ " + getAFabricacion());
         System.out.println("Color: " + getColor());
         System.out.println("Kilometraje: " + getKilometraje());
