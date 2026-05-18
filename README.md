@@ -16,3 +16,58 @@ Aplicación desarrollada en Java con un menú interactivo que permite al usuario
 - Java
 - JDK 25.0.3
 - Visual Studio Code
+
+Marte-Pichardo-Rey-Enmanuel-Tarea1
+├── Evidencias
+│   ├── Captura de pantalla 2026-05-18 132500.png
+│   ├── Captura de pantalla 2026-05-18 135757.png
+│   ├── Captura de pantalla 2026-05-18 141009.png
+│   ├── Captura de pantalla 2026-05-18 141031.png
+│   ├── Captura de pantalla 2026-05-18 141108.png
+│   ├── Captura de pantalla 2026-05-18 141241.png
+│   ├── Captura de pantalla 2026-05-18 141324.png
+│   ├── Captura de pantalla 2026-05-18 141422.png
+│   ├── Captura de pantalla 2026-05-18 141617.png
+│   ├── Captura de pantalla 2026-05-18 141725.png
+│   ├── Captura de pantalla 2026-05-18 141842.png
+│   ├── Captura de pantalla 2026-05-18 142020.png
+│   ├── Captura de pantalla 2026-05-18 142056.png
+│   ├── Captura de pantalla 2026-05-18 142339.png
+│   ├── Captura de pantalla 2026-05-18 142416.png
+│   ├── Captura de pantalla 2026-05-18 142549.png
+│   ├── Captura de pantalla 2026-05-18 142605.png
+│   ├── Captura de pantalla 2026-05-18 142615.png
+│   ├── Captura de pantalla 2026-05-18 142721.png
+│   ├── Captura de pantalla 2026-05-18 142737.png
+│   ├── Captura de pantalla 2026-05-18 142751.png
+│   ├── Captura de pantalla 2026-05-18 142806.png
+│   ├── Captura de pantalla 2026-05-18 142832.png
+│   ├── Captura de pantalla 2026-05-18 142946.png
+│   ├── Captura de pantalla 2026-05-18 143001.png
+│   ├── Captura de pantalla 2026-05-18 143022.png
+│   ├── Captura de pantalla 2026-05-18 143110.png
+│   ├── Captura de pantalla 2026-05-18 143143.png
+│   ├── Captura de pantalla 2026-05-18 143409.png
+│   ├── Captura de pantalla 2026-05-18 143455.png
+│   ├── Captura de pantalla 2026-05-18 143520.png
+│   ├── Captura de pantalla 2026-05-18 143555.png
+│   ├── Captura de pantalla 2026-05-18 143637.png
+│   ├── Captura de pantalla 2026-05-18 143705.png
+│   └── Note
+│
+├── src
+│   ├── Calculadora.java
+│   ├── Carro.java
+│   ├── Consecionario.java
+│   ├── CuentaBancaria.java
+│   ├── Estudiante.java
+│   ├── Main.java
+│   ├── MenuEstudiantes.java
+│   ├── MenuInventario.java
+│   ├── Menus.java
+│   ├── Moto.java
+│   ├── Producto.java
+│   └── Vehiculo.java
+│
+├── .gitignore
+└── README.md
